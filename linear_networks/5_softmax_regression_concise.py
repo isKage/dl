@@ -22,8 +22,8 @@ def load_data_fashion_mnist(batch_size, resize=None):
     if resize:
         trans.insert(0, transforms.Resize(resize))
     trans = transforms.Compose(trans)
-    mnist_train = torchvision.datasets.FashionMNIST(root="./data", train=True, transform=trans, download=False)
-    mnist_test = torchvision.datasets.FashionMNIST(root="./data", train=False, transform=trans, download=False)
+    mnist_train = torchvision.datasets.FashionMNIST(root="../data", train=True, transform=trans, download=False)
+    mnist_test = torchvision.datasets.FashionMNIST(root="../data", train=False, transform=trans, download=False)
     return (data.DataLoader(mnist_train, batch_size, shuffle=True, num_workers=get_dataloader_workers()),
             data.DataLoader(mnist_test, batch_size, shuffle=False, num_workers=get_dataloader_workers()))
 
@@ -52,4 +52,4 @@ trainer = torch.optim.SGD(net.parameters(), lr=0.1)
 
 # 5. 训练
 num_epochs = 10
-d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)  # 展示动态图片
+d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)  # 展示动态图片(jupyter)

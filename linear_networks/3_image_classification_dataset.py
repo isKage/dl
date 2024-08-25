@@ -16,8 +16,8 @@ d2l.use_svg_display()
 并除以255使得所有像素的数值均在0～1之间
 """
 trans = transforms.ToTensor()
-mnist_train = torchvision.datasets.FashionMNIST(root="./data", train=True, transform=trans, download=False)
-mnist_test = torchvision.datasets.FashionMNIST(root="./data", train=False, transform=trans, download=False)
+mnist_train = torchvision.datasets.FashionMNIST(root="../data", train=True, transform=trans, download=False)
+mnist_test = torchvision.datasets.FashionMNIST(root="../data", train=False, transform=trans, download=False)
 
 
 # 2. 两个可视化数据集的函数（不重要）
