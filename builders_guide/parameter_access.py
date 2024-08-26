@@ -5,9 +5,6 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-import torch
-from torch import nn
-
 '''参数访问'''
 net = nn.Sequential(nn.Linear(4, 8), nn.ReLU(), nn.Linear(8, 1))
 X = torch.rand(size=(2, 4))
