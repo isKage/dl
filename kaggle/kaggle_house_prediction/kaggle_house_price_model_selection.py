@@ -6,8 +6,8 @@ from torch import nn
 from d2l import torch as d2l
 from torch.utils.data import DataLoader, TensorDataset
 
-train_data = pd.read_csv('./data/train.csv')
-test_data = pd.read_csv('./data/test.csv')  # test 实则是 valid
+train_data = pd.read_csv('data/train.csv')
+test_data = pd.read_csv('data/test.csv')  # test 实则是 valid
 
 # 训练数据集包括1460个样本，每个样本80个特征和1个标签
 # 测试数据集包含1459个样本，每个样本80个特征
