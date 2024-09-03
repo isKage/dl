@@ -1,7 +1,19 @@
-# pycharm
-.idea/
+# Platform specified files
 .DS_Store
 
+# Code editors
+.atom/
+.fleet/
+.idea/
+
+*.iml
+*.ipr
+*.iws
+
+*.sln
+*.swp
+
+# Pycharm
 __pycache__/
 *.py[cod]
 *$py.class
